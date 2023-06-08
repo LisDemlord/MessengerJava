@@ -5,5 +5,5 @@
     <string name="arrow"><![CDATA[>]]></string>
     <string name="reset">Reset</string>
     <string name="quit">Quit</string>
-    <string name="sms">Напишите сообщение...</string>
+    <string name="sms">Напишите сообщение..</string>
 </resources>
