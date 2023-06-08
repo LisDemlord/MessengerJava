@@ -172,7 +172,7 @@ public class Chat extends AppCompatActivity implements View.OnClickListener, TCP
     @Override
     public void onException(TCPConnection tcpConnection, Exception e) {
         /**
-        * Срабатывает при исключении. Выводит код ошики.
+        * Срабатывает при исключении. Выводит код ошибки.
         */
         runOnUiThread(new Runnable() {
             @Override
