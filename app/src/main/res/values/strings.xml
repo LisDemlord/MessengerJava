@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Messenger</string>
+    <string name="app_name">MessengerJava</string>
     <string name="login">Войти</string>
     <string name="nick">Задайте никнейм:</string>
     <string name="arrow"><![CDATA[>]]></string>
