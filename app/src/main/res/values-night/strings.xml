@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <string name="login">Войти</string>
+    <string name="nick">Задайте никнейм:</string>
+    <string name="arrow"><![CDATA[>]]></string>
+    <string name="reset">Reset</string>
+    <string name="quit">Quit</string>
+    <string name="sms">Напишите сообщение...</string>
+</resources>
