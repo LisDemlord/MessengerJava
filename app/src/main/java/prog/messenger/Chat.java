@@ -18,14 +18,13 @@ import com.kgsu.network.TCPConnectionListener;
 
 import java.io.IOException;
 
-/*
+/**
  * \brief Класс отвечающий за отрисовку чата и отправку сообщений на сервер
  * \authors LisDem
  * \date 22.05.2022
  */
 public class Chat extends AppCompatActivity implements View.OnClickListener, TCPConnectionListener {
 
-    // Создание логов
     private static final String TAG = "Logs";
 
     // Объявление элементов
@@ -38,7 +37,7 @@ public class Chat extends AppCompatActivity implements View.OnClickListener, TCP
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        /*
+        /**
          * Метод вызывается при создании или перезапуске активности.
          * Отвечает за инициалиацию переменных, а так же указывает какой xml файл необходимо отобразить.
          */
@@ -71,7 +70,7 @@ public class Chat extends AppCompatActivity implements View.OnClickListener, TCP
 
     @Override
     public void onClick(View view) {
-        /*
+        /**
          * Метод отвечает за обработку нажатий на кнопку отправки сообщений
          */
         String msg_0, msg_end;
@@ -113,7 +112,7 @@ public class Chat extends AppCompatActivity implements View.OnClickListener, TCP
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        /*
+        /**
          *Отвечает за создание и отрисовку выпадающего меню в верхней панели.
          */
         getMenuInflater().inflate(R.menu.mes_menu, menu);
@@ -122,7 +121,7 @@ public class Chat extends AppCompatActivity implements View.OnClickListener, TCP
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        /*
+        /**
          * Метод отвечает за обработку нажатий на кнопки в выпадающем меню.
          */
         // Проверка, какая именно кнопка была нажата
@@ -143,14 +142,14 @@ public class Chat extends AppCompatActivity implements View.OnClickListener, TCP
 
     @Override
     public void onConnection(TCPConnection tcpConnection) {
-        /*
+        /**
          * Пустой метод, срабатывает при подключении к серверу.
          */
     }
 
     @Override
     public void onStringInput(TCPConnection tcpConnection, String value) {
-        /*
+        /**
          * Метод срабатывает при получении строки с сервера.
          */
         printMsg(value);
@@ -158,7 +157,7 @@ public class Chat extends AppCompatActivity implements View.OnClickListener, TCP
 
     @Override
     public void onDisconnect(TCPConnection tcpConnection) {
-        /*
+        /**
         * Срабатывает при отключении от сервера.
         */
         runOnUiThread(new Runnable() {
@@ -172,8 +171,8 @@ public class Chat extends AppCompatActivity implements View.OnClickListener, TCP
 
     @Override
     public void onException(TCPConnection tcpConnection, Exception e) {
-        /*
-        * Срабатывает при исключении. Выводит код ошибки.
+        /**
+        * Срабатывает при исключении. Выводит код ошики.
         */
         runOnUiThread(new Runnable() {
             @Override
@@ -185,7 +184,7 @@ public class Chat extends AppCompatActivity implements View.OnClickListener, TCP
     }
 
     public void printMsg(String value) {
-        /*
+        /**
         * Метод отвечает за отображение сообщений на экране пользователя.
         */
         runOnUiThread(new Runnable() {
